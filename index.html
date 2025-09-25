@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R-News</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📰 R-News</h1>
+    <p>Your daily news updates</p>
+  </header>
+
+  <main>
+    <div id="news-container"></div>
+
+    <section id="admin-section">
+      <h2>Add News (Admin Only)</h2>
+      <input type="text" id="title" placeholder="News Title"><br>
+      <textarea id="content" placeholder="News Content"></textarea><br>
+      <button onclick="addNews()">Publish</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
