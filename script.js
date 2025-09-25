@@ -9,8 +9,11 @@ function addNews() {
 
   const newsContainer = document.getElementById("news-container");
   const newsItem = document.createElement("div");
-  newsItem.className = "news";
-  newsItem.innerHTML = `<h3>${title}</h3><p>${content}</p>`;
+  newsItem.className = "news bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition";
+  newsItem.innerHTML = `
+    <h3 class="text-lg font-bold mb-2">${title}</h3>
+    <p class="text-gray-700">${content}</p>
+  `;
   
   newsContainer.prepend(newsItem);
 
